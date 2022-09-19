@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <!--//Introduz algo; Cabeçalho -->
+        <h1>Estudo do HTML</h1>
+        <h3>Conceitos introdutórios da linguagem</h3>
+        <nav>
+            <!--Agrupa links de navegação-->
+            <ol>
+                <li><a href="#intro">Introdução</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <!--Conteúdo principal da página-->
+        <section>
+            <h3>Uso de tags</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid fugiat expedita, debitis eos cumque
+                distinctio veritatis exercitationem fuga magnam? Odio fugit quos placeat vitae dignissimos officiis
+                aliquid, odit similique. Magni!
+            </p>
+        </section>
+        <section>
+            <h3>Uso de tabelas</h3>
+           <table border = '1' cellpading="3" style="border-collapse: collapse">
+            <thead> <!--Cabeçalho da tabela-->
+                <tr>
+                    <!--Colspan = duração da coluna-->
+                    <th colspan="4">Usuários</th>
+                </tr>
+                <tr> <!--Table row-->
+                    <th>Tipo</th>
+                    <th>Nome</th> <!--table header-->
+                    <th>CPF</th>
+                    <th>Data nascimento</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Funcionários</td>
+                        <td>Zezinho</td><!--Table Data-->
+                        <td>000.000.001</td>
+                        <td>26/06/1999</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Zezinho</td><!--Table Data-->
+                        <td>000.000.001</td>
+                        <td>26/06/1999</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Zezinho</td><!--Table Data-->
+                        <td>000.000.001</td>
+                        <td>26/06/1999</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <table border="1" cellpadding="4" style="border-collapse: collapse;">
+                <tr>
+                    <td colspan="2">Célula 1-1</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Célula 2-1</td>
+                    <td>Célula 2-1</td>
+                    <td>Célula 2-1</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <hr/> <!--Horizontal rule-->
+    <footer>
+        ©
+        <script>
+            document.write(new Date().getFullYear())
+        </script>
+        SoulCodeAcademy
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://soulcodeacademy.org/curso-java-full-stack -->
+<html class="js sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside" lang="en" style="transform: none;"><script type="text/javascript" async="" src="./Curso Java Full Stack - SoulCode Academy_files/js"></script><script type="text/javascript" async="" src="./Curso Java Full Stack - SoulCode Academy_files/analytics.js.download"></script><script async="" src="./Curso Java Full Stack - SoulCode Academy_files/gtm.js.download"></script><script async="false" type="text/javascript" src="chrome-extension://fnjhmkhhmkbjkkabndcnnogagogbneec/in-page.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NDNWVZX');</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="./Curso Java Full Stack - SoulCode Academy_files/js(1)"></script>
+    <script>
+        window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-228576340-1'); 
+    </script>
+    <!-- End Google Tag Manager -->
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Curso Java Full Stack - SoulCode Academy</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://soulcodeacademy.org/assets/images/favicon.png">
+
+    <!-- Vendor CSS (Bootstrap & Icon Font) -->
+    <link rel="stylesheet" href="./Curso Java Full Stack - SoulCode Academy_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./Curso Java Full Stack - SoulCode Academy_files/font-awesome-pro.min.css">
+    <link rel="stylesheet" href="./Curso Java Full Stack - SoulCode Academy_files/font-gilroy.css">
+
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="./Curso Java Full Stack - SoulCode Academy_files/style.css">
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css"> -->
+    <link rel="stylesheet" href="./Curso Java Full Stack - SoulCode Academy_files/plugins.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+    <script type="text/javascript" async="" src="./Curso Java Full Stack - SoulCode Academy_files/64f8972d-4e32-4357-9cda-16e1992cc66c-loader.js.download"></script>
+<style type="text/css">img[onload^="SVGInject("]{visibility:hidden;}</style><style id="theia-sticky-sidebar-stylesheet-TSS">.theiaStickySidebar:after {content: ""; display: table; clear: both;}</style><link id="avast_os_ext_custom_font" href="chrome-extension://eofcbnmajmjmplflapaojjnihcjkigck/common/ui/fonts/fonts.css" rel="stylesheet" type="text/css"><style type="text/css">/*===============================
+=            Choices            =
+===============================*/
+.choices {
+    position: relative;
+  }
+
+  .rd-choices {
+    margin-bottom: 24px;
+    font-size: 16px;
+    background-color: #FFF;
+    height: 38px;
+  }
+
+  [class^="rdstation-popup-position"]:not(.floating-button) .choices {
+    height: 45px;
+  }
+
+  .choices:focus {
+    outline: none;
+  }
+
+  .choices:last-child {
+    margin-bottom: 0;
+  }
+
+  .choices.rd-is-disabled .rd-choices__inner,
+  .choices.rd-is-disabled .rd-choices__input {
+    background-color: #EAEAEA;
+    cursor: not-allowed;
+    user-select: none;
+  }
+
+  .choices.rd-is-disabled .rd-choices__item {
+    cursor: not-allowed;
+  }
+
+  .choices[data-type*="select-one"] {
+    cursor: pointer;
+  }
+
+  .choices[data-type*="select-one"] .rd-choices__inner {
+    padding-bottom: 7.5px;
+  }
+
+  .choices[data-type*="select-one"] .rd-choices__input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid #DDDDDD;
+    background-color: #FFFFFF;
+    margin: 0;
+  }
+
+  .choices[data-type*="select-one"] .rd-choices__button {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjMDAwIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yLjU5Mi4wNDRsMTguMzY0IDE4LjM2NC0yLjU0OCAyLjU0OEwuMDQ0IDIuNTkyeiIvPjxwYXRoIGQ9Ik0wIDE4LjM2NEwxOC4zNjQgMGwyLjU0OCAyLjU0OEwyLjU0OCAyMC45MTJ6Ii8+PC9nPjwvc3ZnPg==);
+    padding: 0;
+    background-size: 8px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -10px;
+    margin-right: 25px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10em;
+    opacity: .5;
+  }
+
+  .choices[data-type*="select-one"] .rd-choices__button:hover, .choices[data-type*="select-one"] .rd-choices__button:focus {
+    opacity: 1;
+  }
+
+  .choices[data-type*="select-one"] .rd-choices__button:focus {
+    box-shadow: 0px 0px 0px 2px #00BCD4;
+  }
+
+  .choices[data-type*="select-one"]:after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-style: solid;
+    border-color: #333333 transparent transparent transparent;
+    border-width: 5px;
+    position: absolute;
+    right: 11.5px;
+    top: 50%;
+    margin-top: -2.5px;
+    pointer-events: none;
+  }
+
+  .choices[data-type*="select-one"].rd-is-open:after {
+    border-color: transparent transparent #333333 transparent;
+    margin-top: -7.5px;
+  }
+
+  .choices[data-type*="select-one"][dir="rtl"]:after {
+    left: 11.5px;
+    right: auto;
+  }
+
+  .choices[data-type*="select-one"][dir="rtl"] .rd-choices__button {
+    right: auto;
+    left: 0;
+    margin-left: 25px;
+    margin-right: 0;
+  }
+
+  .choices[data-type*="select-multiple"] .rd-choices__inner,
+  .choices[data-type*="text"] .rd-choices__inner {
+    cursor: text;
+  }
+
+  .choices[data-type*="select-multiple"] .rd-choices__button,
+  .choices[data-type*="text"] .rd-choices__button {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+    margin-right: -4px;
+    margin-bottom: 0;
+    margin-left: 8px;
+    padding-left: 16px;
+    border-left: 1px solid #008fa1;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAyMSAyMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSIjRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0yLjU5Mi4wNDRsMTguMzY0IDE4LjM2NC0yLjU0OCAyLjU0OEwuMDQ0IDIuNTkyeiIvPjxwYXRoIGQ9Ik0wIDE4LjM2NEwxOC4zNjQgMGwyLjU0OCAyLjU0OEwyLjU0OCAyMC45MTJ6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 8px;
+    width: 8px;
+    line-height: 1;
+    opacity: .75;
+    border-radius: 0;
+  }
+
+  .choices[data-type*="select-multiple"] .rd-choices__button:hover, .choices[data-type*="select-multiple"] .rd-choices__button:focus,
+  .choices[data-type*="text"] .rd-choices__button:hover,
+  .choices[data-type*="text"] .rd-choices__button:focus {
+    opacity: 1;
+  }
+
+  /* .rd-choices__inner {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 7.5px 7.5px 3.75px;
+    overflow: hidden;
+  } */
+
+  .rd-choices__inner {
+    border-radius: 2.5px;
+    font-size: 14px;
+    min-height: 38px;
+    border: 1px solid #5897fb;
+  }
+
+  .rd-is-focused .rd-choices__inner,
+  .rd-is-open .rd-choices__inner {
+    border-color: #5897fb !important;
+  }
+
+  .rd-is-open .rd-choices__inner {
+    border-radius: 2.5px 2.5px 0 0 !important;
+    border-bottom: none !important;
+  }
+
+  .rd-is-flipped.rd-is-open .rd-choices__inner {
+    border-radius: 0 0 2.5px 2.5px !important;
+    border-bottom: 1px solid #5897fb !important;
+  }
+
+  .choices__list {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .rd-choices__list {
+    padding:4px !important;
+  }
+
+  .rd-choices__list--single {
+    display: inline-block;
+    padding: 4px 16px 4px 4px;
+    width: 100%;
+    line-height: 28px !important;
+  }
+
+  [class^="rdstation-popup-position"]:not(.floating-button) .rd-choices__list--single {
+    line-height: 35px !important;
+  }
+
+  [dir="rtl"] .rd-choices__list--single {
+    padding-right: 4px;
+    padding-left: 16px;
+  }
+
+  .rd-choices__list--single .rd-choices__item {
+    width: 100%;
+  }
+
+  .rd-choices__list--multiple {
+    display: inline;
+  }
+
+  .rd-choices__list--multiple .rd-choices__item {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 3.75px;
+    margin-bottom: 3.75px;
+    background-color: #00BCD4;
+    border: 1px solid #00a5bb;
+    color: #FFFFFF;
+    word-break: break-all;
+  }
+
+  .rd-choices__list--multiple .rd-choices__item[data-deletable] {
+    padding-right: 5px;
+  }
+
+  [dir="rtl"] .rd-choices__list--multiple .rd-choices__item {
+    margin-right: 0;
+    margin-left: 3.75px;
+  }
+
+  .rd-choices__list--multiple .rd-choices__item.rd-is-highlighted {
+    background-color: #00a5bb;
+    border: 1px solid #008fa1;
+  }
+
+  .rd-is-disabled .rd-choices__list--multiple .rd-choices__item {
+    background-color: #aaaaaa;
+    border: 1px solid #919191;
+  }
+
+  .choices__list--dropdown {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    margin-top: -1px;
+    overflow: hidden;
+    word-break: break-all;
+  }
+
+  .rd-choices__list--dropdown {
+    display: none;
+    z-index: 999999 !important;
+    background-color: #FFFFFF;
+    border-bottom-left-radius: 2.5px;
+    border-bottom-right-radius: 2.5px;
+    border-bottom: 1px solid #cacaca !important;
+    border-left: 1px solid #cacaca !important;
+    border-right: 1px solid #cacaca !important;
+  }
+
+  .rd-choices__list--dropdown.rd-is-active {
+    display: block;
+    border-bottom: 1px solid #5897fb !important;
+    border-left: 1px solid #5897fb !important;
+    border-right: 1px solid #5897fb !important;
+    margin-top: -1px !important;
+  }
+
+  .rd-is-open .rd-choices__list--dropdown {
+    border-color: #b7b7b7;
+  }
+
+  .rd-is-flipped .rd-choices__list--dropdown {
+    top: auto;
+    bottom: 100%;
+    margin-top: 0;
+    margin-bottom: -1px !important;
+    border-radius: .25rem .25rem 0 0;
+    border-top: 1px solid #5897fb !important;
+    border-bottom: none !important;
+  }
+
+  .rd-choices__list--dropdown .rd-choices__list {
+    position: relative;
+    max-height: 300px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    will-change: scroll-position;
+  }
+
+  .rd-choices__list--dropdown .rd-choices__item {
+    position: relative;
+    padding: 10px;
+    font-size: 14px;
+    padding: 5px !important;
+  }
+
+  [dir="rtl"] .rd-choices__list--dropdown .rd-choices__item {
+    text-align: right;
+  }
+
+  @media (min-width: 640px) {
+    .rd-choices__list--dropdown .rd-choices__item--selectable {
+      padding-right: 100px;
+    }
+    .rd-choices__list--dropdown .rd-choices__item--selectable:after {
+      content: attr(data-select-text);
+      font-size: 12px;
+      opacity: 0;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    [dir="rtl"] .rd-choices__list--dropdown .rd-choices__item--selectable {
+      text-align: right;
+      padding-left: 100px;
+      padding-right: 10px;
+    }
+    [dir="rtl"] .rd-choices__list--dropdown .rd-choices__item--selectable:after {
+      right: auto;
+      left: 10px;
+    }
+  }
+
+  .rd-choices__list--dropdown .rd-choices__item--selectable.rd-is-highlighted {
+    background-color: #3875d7 !important;
+    color: #fff !important;
+  }
+
+  .rd-choices__list--dropdown .rd-choices__item--selectable.rd-is-highlighted:after {
+    opacity: .5;
+  }
+
+  .rd-choices__item {
+    cursor: default;
+  }
+
+  .rd-choices__item img {
+    width: 26px;
+    display: unset;
+  }
+
+  .rd-choices__item--selectable {
+    cursor: pointer;
+  }
+
+  .rd-choices__item--disabled {
+    cursor: not-allowed;
+    user-select: none;
+    opacity: .5;
+  }
+
+  .choices__heading {
+    font-weight: 600;
+    padding: 10px;
+  }
+
+  .rd-choices__heading {
+    font-size: 12px;
+    border-bottom: 1px solid #f7f7f7;
+    color: gray;
+  }
+
+  .rd-choices__button {
+    text-indent: -9999px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .rd-choices__button:focus {
+    outline: none;
+  }
+
+  .rd-choices__input {
+    display: inline-block;
+    vertical-align: baseline;
+    background-color: #f9f9f9;
+    border: 1px solid #aaa !important;
+    font-size: 14px;
+    margin-bottom: 5px;
+    border: 0;
+    border-radius: 0;
+    max-width: 100%;
+    padding: 4px 0 4px 2px;
+    margin-top: 6px;
+    height:28px !important;
+  }
+
+  .rd-choices__input:focus {
+    outline: 0;
+  }
+
+  [dir="rtl"] .rd-choices__input {
+    padding-right: 2px;
+    padding-left: 0;
+  }
+
+  .rd-choices__placeholder {
+    opacity: .5;
+  }
+
+  .rd-choices__input.is-hidden,
+  .choices[data-type*="select-one"] .rd-choices__input.is-hidden,
+  .choices[data-type*="select-multiple"] .rd-choices__input.is-hidden {
+    display: none !important;
+  }
+
+  /*=====  End of Choices  ======*/
+</style></head>
+
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0" style="transform: none;">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDNWVZX" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div id="page" style="transform: none;">
+        <!-- Header Section Start -->
+        <div class="header-section header-shadow header-sticky-bg-dark header-light sticky-header section">
+            <div class="header-inner">
+                <div class="container position-relative">
+                    <div class="row justify-content-between align-items-center">
+
+                        <!-- Header Logo Start -->
+                        <div class="col-auto">
+                            <div class="header-logo">
+                                <a href="https://soulcodeacademy.org/index.html">
+                                    <img class="dark-logo" src="./Curso Java Full Stack - SoulCode Academy_files/dark-logo.png" alt="SoulCode Logo">
+                                    <img class="light-logo" src="./Curso Java Full Stack - SoulCode Academy_files/light-logo.png" alt="SoulCode Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Header Logo End -->
+
+                        <!-- Header Main Menu Start -->
+                        <div class="col d-none d-xl-block position-static">
+                            <nav class="site-main-menu menu-hover-1">
+                                <ul>
+                                    <li class="has-children position-static">
+                                        <a href="https://soulcodeacademy.org/bootcamp"><span class="menu-text">Bootcamps</span></a>
+                                        <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+
+                                        <ul class="mega-menu">
+                                            <li class="d-flex align-items-center justify-content-center">
+                                                <ul>
+                                                    <li><a href="https://soulcodeacademy.org/martech-academy"><span class="menu-text">Analista de
+                                                                Mídia Digital e
+                                                                Performance<span class="badge">Vagas
+                                                                    Abertas</span></span></a></li>
+                                                    <li><a href="https://soulcodeacademy.org/curso-engenharia-de-dados.html"><span class="menu-text">Engenharia de
+                                                                Dados<span class="badge">Vagas Abertas</span></span></a>
+                                                    </li>
+                                                    <li><a href="https://soulcodeacademy.org/curso-java-full-stack"><span class="menu-text">Java
+                                                                Full Stack
+                                                                <span class="badge">Vagas Abertas</span></span></a></li>
+                                                    <li><a href="https://soulcodeacademy.org/curso-desenvolvedor-salesforce"><span class="menu-text">Desenvolvedor Salesforce<span class="badge">Vagas
+                                                                    Abertas</span></span></a></li>
+                                                    <li><a href="https://soulcodeacademy.org/curso-desenvolvedor-servicenow.html"><span class="menu-text">Desenvolvedor ServiceNow<span class="badge">Vagas
+                                                                    Abertas</span></span></a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-50">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://soulcodeacademy.org/curso-engenharia-de-dados"><img src="./Curso Java Full Stack - SoulCode Academy_files/mega-menu.jpg" width="600" height="257" alt="menu-image"></a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="https://soulcodeacademy.org/online"><span class="menu-text">Online</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soulcodeacademy.org/empresas"><span class="menu-text">Para Empresas</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soulcodeacademy.org/imprensa"><span class="menu-text">Imprensa</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soulcodeacademy.org/sobre-nos"><span class="menu-text">Sobre Nós</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://soulcodeacademy.org/martech-academy"><span class="menu-text">Martech</span></a>
+                                    </li>
+                                    <li class="ms-5 has-children position-absolute ja-sou-aluno">
+                                        <a><span class="menu-text text-primary ">Já Sou Aluno
+                                                <i class="far fa-md fa-sign-in ms-2"></i></span></a>
+                                        <ul class="sub-menu start-0">
+                                            <li><a href="https://soulcodeacademy.teachable.com/"><span class="menu-text">Bootcamp</span></a>
+                                            </li>
+                                            <li><a href="https://soulcode-online-free.teachable.com/"><span class="menu-text">Online Grátis</span></a>
+                                            </li>
+                                            <li><a href="https://soulon-soulcode.teachable.com/"><span class="menu-text">Online Premium</span></a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- Header Main Menu End -->
+
+                        <!-- Header Right Start -->
+                        <div class="col-auto">
+                            <div class="header-right">
+                                <div class="inner">
+                                    <!-- Header Mobile Menu Toggle Start -->
+                                    <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                                        <button class="toggle">
+                                            <i class="icon-top"></i>
+                                            <i class="icon-middle"></i>
+                                            <i class="icon-bottom"></i>
+                                        </button>
+                                    </div>
+                                    <!-- Header Mobile Menu Toggle End -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Header Right End -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section End -->
+
+
+        <!-- Page Title Section Start -->
+        <div class="section py-5">
+            <div class="page-title">
+                <div class="container">
+                    <h1 class="title">Desenvolvedor Java Full Stack</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Page Title Section End -->
+
+        <!-- Course Details Section Start -->
+        <div class="section max-mb-100" style="transform: none;">
+            <div class="container" style="transform: none;">
+                <div class="row max-mb-n50" style="transform: none;">
+
+                    <div class="col-lg-8 col-12 order-lg-1 max-mb-50">
+                        <!-- Course Details Wrapper Start -->
+                        <div class="course-details-wrapper">
+                            <div class="course-nav-tab">
+                                <ul class="nav">
+                                    <li><a class="active" data-bs-toggle="tab" href="https://soulcodeacademy.org/curso-java-full-stack#overview">Visão Geral</a></li>
+                                    <li><a data-bs-toggle="tab" href="https://soulcodeacademy.org/curso-java-full-stack#curriculum">Conteúdo do Curso</a></li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div id="overview" class="tab-pane fade show active">
+                                    <div class="course-overview">
+                                        <h3 class="title">Sobre o curso</h3>
+
+                                        <p>Bootcamps Digitais são cursos online ao vivo, com o objetivo de capacitar os
+                                            alunos a se tornarem Desenvolvedores JAVA FULL STACK criando a oportunidade
+                                            de iniciar ou reciclar uma nova profissão no mercado de tecnologia.</p>
+
+                                        <p>Nossa metodologia tem uma abordagem que vai da formação ao emprego,
+                                            capacitando os alunos na parte técnica, nas habilidades interpessoais e no
+                                            direcionamento de carreira com ferramentas digitais mais usadas em grandes
+                                            empresas globalmente.</p>
+
+                                        <!-- <div class="overview-course-video">
+                                            <iframe title="Drive Digital Transformation With Platform Strategies | Info-Tech Analyst Perspective" src="https://www.youtube.com/embed/m-X1ExlQ9uE?feature=oembed"></iframe>
+                                        </div> -->
+
+
+
+                                        <h3 class="title">O que você irá aprender</h3>
+
+                                        <p>Profissionais Java Full Stack conseguem solucionar uma grande gama de
+                                            problemas tecnológicos que vão da navegação do usuário até o sistema de
+                                            backoffice, dados e suas integrações.</p>
+
+                                        <p>Profissionais com o perfil Full Stack são muito valorizados, não só pelo seu
+                                            conhecimento técnico, mas também por facilitarem a comunicação entre as
+                                            áreas que participam de um projeto, um intermediador, que agiliza as
+                                            soluções</p>
+
+                                    </div>
+                                </div>
+
+                                <div id="curriculum" class="tab-pane fade">
+                                    <div class="course-curriculum">
+                                        <ul class="curriculum-sections">
+                                            <li class="single-curriculum-section">
+                                                <div class="section-header">
+                                                    <div class="section-left">
+
+                                                        <h5 class="title">Módulo 1: HTML5</h5>
+                                                        <p class="section-desc">General introduction to customer-centric
+                                                            strategies</p>
+
+                                                    </div>
+                                                </div>
+                                                <ul class="section-content">
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Estrutura HTML, doctype e principais
+                                                                tags</span>
+
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Elementos de texto e seus
+                                                                atributos</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Elementos de imagens, links e
+                                                                ancoras</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Listas, tabelas e formulários</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Elementos semânticos: session,
+                                                                header, nav, article, aside e footer</span>
+                                                        </a>
+                                                    </li>
+
+                                                </ul>
+                                            </li>
+
+                                            <li class="single-curriculum-section">
+                                                <div class="section-header">
+                                                    <div class="section-left">
+
+                                                        <h5 class="title">Módulo 2: CSS3</h5>
+                                                        <p class="section-desc">Learn about the basics of Customer
+                                                            Advisory Board</p>
+
+                                                    </div>
+                                                </div>
+                                                <ul class="section-content">
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Linguagem e sintaxe </span>
+
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Estilização Básica: fontes, cores,
+                                                                margens, padding, bordas, sombras, background e
+                                                                gradients
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Tipos de Layout: Flex, Flexbox, Grid
+                                                                e Responsibidade
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Bootstrap: principais componentes e
+                                                                classes
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="single-curriculum-section">
+                                                <div class="section-header">
+                                                    <div class="section-left">
+
+                                                        <h5 class="title">Módulo 3: Javascript</h5>
+                                                        <p class="section-desc">Learn about the basics of Customer
+                                                            Advisory Board</p>
+
+                                                    </div>
+                                                </div>
+                                                <ul class="section-content">
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Variáveis e tipos primitivos:
+                                                                números, strings, date e objects
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Condições if/else, operadores
+                                                                lógicos e matemáticos
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Loops e estruturas de repetição
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Funções e parametros
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Funções anônimas e Arrow Functions
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Eventos e DOM
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="single-curriculum-section">
+                                                <div class="section-header">
+                                                    <div class="section-left">
+
+                                                        <h5 class="title">Módulo 4: Angular (+Angular Material)</h5>
+                                                        <p class="section-desc">Learn about the basics of Customer
+                                                            Advisory Board</p>
+
+                                                    </div>
+                                                </div>
+                                                <ul class="section-content">
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">
+                                                                Typescript
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Angular CLI
+
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Componentes
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Data binding
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Diretivas NG
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Comunicação e ciclo de vida entre
+                                                                componentes
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Services
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">RXJS Observables
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">HTTP requests
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Roteamento de URLs
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Angular Material
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="single-curriculum-section">
+                                                <div class="section-header">
+                                                    <div class="section-left">
+
+                                                        <h5 class="title">Módulo 5: Java</h5>
+                                                        <p class="section-desc">Learn about the basics of Customer
+                                                            Advisory Board</p>
+
+                                                    </div>
+                                                </div>
+                                                <ul class="section-content">
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Linguagem e Sintaxe
+                                                            </span>
+
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Programação Orientada a Objetos
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Padrões de Projeto: Inversion Of
+                                                                Control e Dependency Injection
+
+                                                            </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Spring Data &amp; Spring Data JPA</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Spring Boot (CRUD)</span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Spring MVC </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Banco de dados MySQL </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">ORM &amp; Hibernate </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Spring Security </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">REDIS Cache </span>
+                                                        </a>
+                                                    </li>
+
+                                                    <li class="course-item">
+                                                        <a class="section-item-link">
+                                                            <span class="item-name">Integração com Angular</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+
+                                            <li class="single-curriculum-section">
+                                                <div class="section-header">
+                                                    <div class="section-left">
+
+                                                        <h5 class="title">Projeto Final</h5>
+                                                        <p class="section-desc">Trabalho em grupo onde os alunos são
+                                                            dividos em squads de trabalho</p>
+
+                                                    </div>
+                                                </div>
+                                                <div class="learn-press-message success ml-15 mr-15">
+                                                    <i class="fa"></i>Desenvolvimento de um projeto final, baseado em um
+                                                    desafio estabelecido pelos nossos parceiros contratantes, que tem
+                                                    por objetivo aplicar todos os ensinamentos do curso para resolver um
+                                                    problema de negócio real.
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Course Details Wrapper End -->
+                    </div>
+
+                    <div class="col-lg-4 col-12 order-lg-2 max-mb-50" id="sticky-sidebar" style="position: relative; overflow: visible; box-sizing: border-box; min-height: 1px;">
+                        
+                    <div class="theiaStickySidebar" style="padding-top: 0px; padding-bottom: 1px; position: static; transform: none; left: 888.5px; top: 0px;"><div class="sidebar-widget-wrapper pr-0">
+                            <div class="sidebar-widget">
+                                <div class="sidebar-widget-content">
+                                    <div class="sidebar-entry-course-info">
+                                        <div class="course-price">
+                                            <span class="meta-label">
+                                                <i class="meta-icon far fa-money-bill-wave"></i>
+                                                Custo
+                                            </span>
+                                            <span class="meta-value">
+                                                <span class="price">Bolsa Integral</span>
+                                            </span>
+                                        </div>
+
+                                        <div class="course-meta">
+                                            <div class="course-time">
+                                                <span class="meta-label">
+                                                    <i class="far fa-calendar"></i>
+                                                    Prazo de Inscrição
+                                                </span>
+                                                <span class="meta-value">até 16/01/23</span>
+                                            </div>
+                                            <div class="course-duration">
+                                                <span class="meta-label">
+                                                    <i class="far fa-rocket"></i> Início do Curso
+                                                </span>
+                                                <span class="meta-value">30/01/23</span>
+                                            </div>
+                                            <div class="course-duration">
+                                                <span class="meta-label">
+                                                    <i class="far fa-calendar-alt"></i>
+                                                    Duração
+                                                </span>
+                                                <span class="meta-value">16 semanas</span>
+                                            </div>
+                                            <div class="course-lectures">
+                                                <span class="meta-label">
+                                                    <i class="far fa-clock"></i>
+                                                    Horário de Aula
+                                                </span>
+                                                <span class="meta-value">8h às 18h</span>
+                                            </div>
+
+                                            <!-- <div class="course-students">
+                                                <span class="meta-label">
+                                                    <i class="far fa-users"></i>
+                                                    Estudantes
+                                                </span>
+                                                <span class="meta-value">Máximo de 50</span>
+                                            </div> -->
+
+                                            <div class="course-instructor">
+                                                <span class="meta-label">
+                                                    <i class="far fa-chalkboard-teacher"></i>
+                                                    Formato de Aula
+                                                </span>
+                                                <span class="meta-value">Online e ao vivo </span>
+                                            </div>
+                                            <div class="course-language">
+                                                <span class="meta-label">
+                                                    <i class="far fa-language"></i>
+                                                    Idioma
+                                                </span>
+                                                <span class="meta-value">Português</span>
+                                            </div>
+
+                                        </div>
+                                        <div class="lp-course-buttons">
+                                            <a href="https://soulcodeacademy.org/inscricao-java-full-stack" class="btn btn-primary btn-width-100">QUERO ME
+                                                INSCREVER AGORA<i class="far fa-md fa-long-arrow-alt-right ms-2"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div></div></div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Course Details Section End -->
+        <!-- Start of soulcodeacademysupport Zendesk Widget script -->
+        <script id="ze-snippet" src="./Curso Java Full Stack - SoulCode Academy_files/snippet.js.download"> </script>
+        <!-- End of soulcodeacademysupport Zendesk Widget script -->
+        <div class="footer-section section">
+            <div class="container">
+                <!-- Footer Top Widgets Start -->
+                <div class="row">
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-6 col-md-5 col-12">
+                        <div class="footer-widget light-color">
+                            <h4 class="footer-widget-title">Endereço</h4>
+                            <div class="footer-widget-content">
+                                <div class="content">
+                                    <p>Alameda Santos, 1165, 11ª andar</p>
+                                    <p>Jardim Paulista - São Paulo/SP - CEP: 01419-002</p>
+                                    <p>+55 (11) 4810-3644</p>
+                                    <p><a href="https://soulcodeacademy.org/curso-java-full-stack#">atendimento@soulcodeacademy.org </a></p>
+                                </div>
+                                <div class="footer-social-inline">
+                                    <a href="https://www.facebook.com/SoulCodeAcademy" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                                    <a href="https://twitter.com/SoulCodeAcademy" target="_blank"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.instagram.com/soulcodeacademy/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/soulcodebrasil/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-3 col-md-4 col-sm-7 col-12">
+                        <div class="footer-widget light-color">
+                            <h4 class="footer-widget-title">Páginas</h4>
+                            <div class="footer-widget-content">
+                                <ul class="column-2">
+                                    <li><a href="https://soulcodeacademy.org/bootcamp">Bootcamps</a></li>
+
+                                    <li><a href="https://soulcodeacademy.org/empresas">Para Empresas</a></li>
+                                    <li><a href="https://soulcodeacademy.org/online">Online</a></li>
+                                    <li><a href="https://soulcodeacademy.org/imprensa">Imprensa</a></li>
+                                    <li><a href="https://soulcodeacademy.org/sobre-nos">Sobre nós</a></li>
+                                    <li><a href="https://soulcodeacademy.org/martech-academy">Martech Academy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                    <!-- Footer Widget Start -->
+                    <div class="col-xl-3 col-md-3 col-sm-5 col-12">
+                        <div class="footer-widget light-color">
+                            <h4 class="footer-widget-title">Informações</h4>
+                            <div class="footer-widget-content">
+                                <ul>
+                                    <li><a href="https://soulcodeacademy.org/faq">FAQ</a></li>
+                                    <li><a href="https://soulcodeacademy.org/politica-privacidade">Politica de Privacidade</a></li>
+                                    <li><a href="https://soulcodeacademy.org/termos-de-uso">Termos de Uso</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Widget End -->
+
+                </div>
+                <!-- Footer Top Widgets End -->
+            </div>
+        </div>
+
+        <!-- Scroll Top Start -->
+        <a href="https://soulcodeacademy.org/curso-java-full-stack#" class="scroll-top" id="scroll-top">
+            <i class="arrow-top fal fa-long-arrow-up"></i>
+            <i class="arrow-bottom fal fa-long-arrow-up"></i>
+        </a>
+        <!-- Scroll Top End -->
+    </div>
+
+    <div id="site-main-mobile-menu" class="site-main-mobile-menu">
+        <div class="site-main-mobile-menu-inner">
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-logo">
+                    <a href="https://soulcodeacademy.org/index.html"><img src="./Curso Java Full Stack - SoulCode Academy_files/dark-logo.png" alt=""></a>
+                </div>
+                <div class="mobile-menu-close">
+                    <button class="toggle">
+                        <i class="icon-top"></i>
+                        <i class="icon-bottom"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mobile-menu-content">
+                <nav class="site-mobile-menu">
+                    <ul>
+                        <li class="has-children position-static">
+                            <a href="https://soulcodeacademy.org/bootcamp"><span class="menu-text">Bootcamps</span></a>
+                            <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+
+                            <ul class="mega-menu">
+                                <li>
+                                    <ul>
+                                        <li><a href="https://soulcodeacademy.org/martech-academy"><span class="menu-text">Analista de Mídia Digital
+                                                    e Performance
+                                                    <span class="badge">Vagas Abertas</span></span></a></li>
+                                        <li><a href="https://soulcodeacademy.org/curso-engenharia-de-dados"><span class="menu-text">Engenharia de
+                                                    Dados</span></a></li>
+                                        <li><a href="https://soulcodeacademy.org/curso-java-full-stack"><span class="menu-text">Java Full Stack
+                                                    <span class="badge">Vagas Abertas</span></span></a></li>
+                                        <li><a href="https://soulcodeacademy.org/curso-desenvolvedor-salesforce"><span class="menu-text">Desenvolvedor Salesforce<span class="badge">Vagas
+                                                        Abertas</span></span></a></li>
+                                        <li><a href="https://soulcodeacademy.org/curso-desenvolvedor-servicenow.html"><span class="menu-text">Desenvolvedor ServiceNow<span class="badge">Vagas
+                                                        Abertas</span></span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item-50">
+                                    <ul>
+                                        <li><a href="https://soulcodeacademy.org/curso-engenharia-de-dados"><img src="./Curso Java Full Stack - SoulCode Academy_files/mega-menu.jpg" alt="menu-image"></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="https://soulcodeacademy.org/online"><span class="menu-text">Online</span></a>
+                        </li>
+                        <li>
+                            <a href="https://soulcodeacademy.org/empresas"><span class="menu-text">Para Empresas</span></a>
+                        </li>
+                        <li>
+                            <a href="https://soulcodeacademy.org/imprensa"><span class="menu-text">Imprensa</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="https://soulcodeacademy.org/sobre-nos"><span class="menu-text">Sobre Nós</span></a>
+                        </li>
+                        <li class="has-children">
+                            <a href="https://soulcodeacademy.org/martech-academy"><span class="menu-text">Martech Academy</span></a>
+
+                        </li>
+                        <li class="has-children position-static">
+                            <a href="https://soulcodeacademy.org/curso-java-full-stack#"><span class="menu-text">Já Sou Aluno</span></a>
+                            <span class="menu-toggle"><i class="far fa-angle-down"></i></span>
+
+                            <ul class="mega-menu">
+                                <li>
+                                    <ul class="">
+                                        <li><a href="https://soulcodeacademy.teachable.com/"><span class="menu-text">Bootcamp</span></a>
+                                        </li>
+                                        <li><a href="https://soulcode-online-free.teachable.com/"><span class="menu-text">Online Grátis</span></a>
+                                        </li>
+                                        <li><a href="https://soulon-soulcode.teachable.com/"><span class="menu-text">Online Premium</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS
+============================================ -->
+
+    <!-- Vendors JS -->
+    <!-- <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+<script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+<script src="assets/js/vendor/bootstrap.bundle.min.js"></script> -->
+
+    <!-- Plugins JS -->
+    <!-- <script src="assets/js/plugins/parallax.min.js"></script>
+<script src="assets/js/plugins/jquery.ajaxchimp.min.js"></script> -->
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <script src="./Curso Java Full Stack - SoulCode Academy_files/vendor.min.js.download"></script>
+    <script src="./Curso Java Full Stack - SoulCode Academy_files/plugins.min.js.download"></script>
+
+    <!-- Main Activation JS -->
+    <script src="./Curso Java Full Stack - SoulCode Academy_files/main.js.download"></script>
+
+
+
+
+
+
+
+<script type="text/javascript" src="./Curso Java Full Stack - SoulCode Academy_files/lead-tracking.min.js.download"></script><script type="text/javascript" src="./Curso Java Full Stack - SoulCode Academy_files/traffic-source-cookie.min.js.download"></script><script type="text/javascript" id="" src="./Curso Java Full Stack - SoulCode Academy_files/64f8972d-4e32-4357-9cda-16e1992cc66c-loader.js.download"></script>
+<iframe data-product="web_widget" title="No content" role="presentation" tabindex="-1" allow="microphone *" aria-hidden="true" src="./Curso Java Full Stack - SoulCode Academy_files/saved_resource.html" style="width: 0px; height: 0px; border: 0px; position: absolute; top: -9999px;"></iframe><div style="position: fixed; box-shadow: rgba(36, 36, 36, 0.1) 0px 8px 24px 0px, rgba(71, 69, 123, 0.04) 0px 1px 4px 0px; z-index: 999999; inset: auto 16px 88px auto; width: 23.75em; max-height: calc(100vh - 32px); transition: hidden 0s ease 0s; height: 0px;"><iframe title="Messaging window" style="width: 100%; height: 100%; position: absolute; border: 0px;" src="./Curso Java Full Stack - SoulCode Academy_files/saved_resource(1).html"></iframe></div><div><style>
+        @-webkit-keyframes launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+        @keyframes launcherOnOpen {
+          0% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+          30% {
+            -webkit-transform: translateY(-5px) rotate(2deg);
+                    transform: translateY(-5px) rotate(2deg);
+          }
+
+          60% {
+            -webkit-transform: translateY(0px) rotate(0deg);
+                    transform: translateY(0px) rotate(0deg);
+          }
+
+
+          90% {
+            -webkit-transform: translateY(-1px) rotate(0deg);
+                    transform: translateY(-1px) rotate(0deg);
+
+          }
+
+          100% {
+            -webkit-transform: translateY(-0px) rotate(0deg);
+                    transform: translateY(-0px) rotate(0deg);
+          }
+        }
+
+        @keyframes webSDKOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity 1;
+          }
+        }
+        @-webkit-keyframes webSDKOnLoad {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      </style><iframe title="Button to launch messaging window" style="height: 64px; width: 64px; position: fixed; bottom: 16px; right: 16px; transform: none; border: 0px; margin-top: 0px; box-shadow: rgba(36, 36, 36, 0.1) 0px 8px 24px 0px, rgba(71, 69, 123, 0.04) 0px 1px 4px 0px; animation: 0.2s ease-in 0s 1 normal none running webSDKOnLoad, 0s ease 0s 1 normal none running undefined; z-index: 999999; border-radius: 0px;" src="./Curso Java Full Stack - SoulCode Academy_files/saved_resource(2).html"></iframe></div><iframe style="width: 1px; height: 1px; position: absolute; top: -100px;" id="rd_tmgr" src="./Curso Java Full Stack - SoulCode Academy_files/saved_resource(3).html"></iframe><script type="text/javascript" src="./Curso Java Full Stack - SoulCode Academy_files/rdstation-popup.min.js.download"></script><script type="text/javascript" src="./Curso Java Full Stack - SoulCode Academy_files/rd-js-integration.min.js.download"></script></body></html>

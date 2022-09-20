@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <!--Rótulo do campo (dá um nome)-->
+            <label for=""></label>
+            <!--Campo de entrada de dados-->
+            <!--Placeholder = dica p/ usuário-->
+            <!--required = obrigatório-->
+            <input id="campoNome" name="campoNome" type="text" placeholder="Seu nome" required>
+        </div>
+        <div>
+            <label for="campoEmail">Email</label><br>
+            <input id="campoEmail" name="campoEmail" type="email" placeholder="usuario@exemplo.com" required>
+        </div>
+        <div>
+            <label for="campoSenha">Senha</label><br>
+            <input type="password" id="campoSenha" name="campoSenha" placeholder="Sua senha" required>
+        </div>
+        <div>
+            <label for="campoProfissão">Profissão</label><br>
+            <select name="campoProfissao" id="campoProfissao">
+                <option selected disabled value="">Selecione uma opção</option>
+                <option value="professor">Professor</option>
+                <option value="técnico">Técnico</option>
+                <option value="especialista">Especialista</option>
+            </select>
+        </div>
+        <div>
+            <label>Idioma nativo</label><br>
+
+            <input type="radio" id="checkIngles" name="campoIdioma" value="ingles">
+            <label for="checkIngles">Ingles</label>
+            
+
+            <input type="radio" id="checkEspanhol" name="campoIdioma" value="espanhol">
+            <label for="checkEspanhol">Espanhol</label>
+
+            <input type="radio" id="checkPortugues" name="campoIdioma" value="portugues">
+            <label for="checkPortugues">Portugues</label>
+
+        </div>
+        <div>
+            <label for="campoResumo">Fale sobre você</label><br>
+            <textarea name="campoResumo" id="campoResumo" cols="100" rows="5" maxlength="1000"></textarea>
+        </div>
+        <div>
+            <input type="checkbox" id="checkTermos" name="concordaTermos" required>
+            <label for="checkTermos">Concordo com os termos de serviço</label>
+        </div>
+        <hr>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        <!--onclick = após o click do usuário-->
+        <button type="button" onclick="alert('aeaeaeae')">Outra ação</button>
+    </form>
+</body>
+
+</html>

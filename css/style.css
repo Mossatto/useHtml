@@ -1,0 +1,31 @@
+p {
+    color:aquamarine;
+    font-size: 42px;
+    font-style: italic;
+    font-family: "Montserrat" sans-serif;
+}
+body {
+    background-color: black;
+}
+h1, h2, h3 {
+    color: white;
+}
+
+/*Utilizado para estilizar um elemento em específico */
+#meu-h1 {
+    font-size: 60px;
+}
+/*Class pode ser utilizado em diferentes tag */
+
+.cabecalho {
+    color: red;
+    font-weight: 900;
+    text-decoration: underline;
+}
+
+.quadrado{
+    border-radius: 16px;
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+}

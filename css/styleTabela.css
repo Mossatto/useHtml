@@ -1,0 +1,77 @@
+header{
+    text-align: center;
+    color: lightslategray;
+    background-color:lightgreen ;
+    width: 30%;
+    margin: auto;
+    border-radius: 12px;
+}
+div{
+    margin: auto;
+    text-align: center;
+    border-color: lightgrey;
+    border-radius: 15px;
+    width: 45%;
+    border-style: solid;
+
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+table{
+    border-color: gainsboro;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-radius: 12px
+}
+img{
+    width: 25px;
+}
+thead{
+    background-color: gainsboro;
+    border-radius:50px;
+}
+td{
+    padding: 10px;
+}
+tr:hover{
+    background-color:lightgray;
+}
+table{
+    text-align: center;
+    display: flexbox;
+    margin: auto;
+
+}
+
+/*Classe e ID*/
+
+#libertadores{
+    color: green;
+    font-weight: 900;
+}
+#sula{
+    color: goldenrod;
+    font-weight: 900;
+}
+#rebaixamento{
+    color: red;
+    font-weight: 900;
+}
+
+.red{
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.green{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.yellow{
+    color: goldenrod;
+    font-size: 20px;
+    font-weight: bolder;
+}

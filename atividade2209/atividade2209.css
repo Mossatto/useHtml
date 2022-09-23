@@ -1,0 +1,46 @@
+h3 {
+    background-color: red;
+}
+
+.box1{
+    background-color: aqua;
+    /*espaçamento interno*/
+    padding: 16px;
+    /*espaçamento externo*/
+    margin: 8px;
+}
+.box2{
+    background-color: blueviolet;
+    /*sentido horario*/
+    padding: 8px 20px 4px 10px;
+    margin: 10px 12px 20px 4px;
+}
+.box3{
+    background-color: chartreuse;
+    border: 2px crimson solid;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.box4{
+    margin: 15px 15px 15px 15px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border-radius: 40px;
+    width: 200px;
+}
+.box5{
+    background-color: darkorange;
+}
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(/images/soulCode\ Logo.png);
+    background-repeat: no-repeat;
+    /*contain = estica a imagem*/
+    background-position: left bottom;
+    /*fixa a image*/
+    background-attachment: fixed;
+}
